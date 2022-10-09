@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Patterns in the Primes</title>
+<link rel="icon" type="image/x-icon" href="calculating.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<style>
+
+.w3-main{margin-left:300px; background-color: white; }
+
+
+</style>
+
+
+</head>
+<body >
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: black;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px; background-color: gray;">Close Menu</a>
+  <div class="w3-container">
+    <br>
+    <img src="Math-clipart-png-8.png" width="200px" alt="image here">    
+    <h3 class="w3-padding-32 w3-text-white"><b>DISCRETE STRUCTURES 2<br>MODULE 1</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Main Page</a> 
+    <a href="BPD.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Basic Properties of Divisibility</a> 
+    <a href="PAC.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Primes and Composites</a> 
+    <a href="PP.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Patterns in the Primes</a> 
+    <a href="CDCMDT.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Commond Divisors, Common Multiple and Division Theorem</a>
+      <p class="w3-bar-item  w3-text-white">Video Tutorials</p>
+    <a href="BPDV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Basic Properties of Divisibility</blockquote></a>
+     <a href="PACV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Primes and Composite</blockquote></a>
+      <a href="PPV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Patterns in the Primes</blockquote></a>
+       <a href="CDCMDTV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Common Divisors, Common Multiples, and Division Theorem</blockquote></a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-large w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-gray w3-margin-right" onclick="w3_open()">☰</a>
+  <span>DISCRETE STRUCTURES 2</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-medium" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main"  >
+
+  <!-- Patterns in the Primes -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge "><b>Patterns in the Primes</b></h1>
+    <hr style="width:600px;border:5px solid black;" class="w3-round">
+   
+   <blockquote>&nbsp;&nbsp;According to Euclid, there are infinitely many primes. No matter how many primes we list, there will always be more primes.  <br>However, proving that there are really infinitely many primes is tasking and may consume our time finding for all of these numbers. 
+               <br><br>&nbsp;&nbsp;There is an ancient method based on the idea that if you start with a list of all the positive integers between 1 and any number n, then eliminate all of the composite numbers up to n, everything that is left must be prime and this is called the SIEVE OF ERATOSTHENES. 
+               <br><br>&nbsp;&nbsp;You just performed the process of the Sieve of Eratosthenes in your preliminary activity. By then you should have noticed that the numbers which are not circled are the primes.
+</blockquote>
+<br>
+<br>
+
+<p><b>Discussion of Concept</b></p>
+<p><u>The Prime Number Theorem</u></p>
+  <blockquote>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As mentioned earlier, there are infinitely many prime numbers and it is very difficult to determine the number if we list all the counting numbers and cross out the composite ones. Through the efforts of some of the French mathematicians like Jacques-Salomon Hadamard and Charles de la Valée Poussin they independently showed that in the limit (as x increases to infinity) the ratio x/ln(x) equals π(x). Hence, the number of primes can be approximately determined  using the formula, π (x) =  . For instance, the number of primes from 1 to 7 is π (7) = π (8) = π (9) = π (10) = 4. That is, </blockquote>
+  <center>
+    <p>
+      π (7)  =   = 3.597288…≈ 4
+    </p>
+    <p>
+    π (8)  =  = 3.847186….≈ 4
+    </p>
+    <p>
+      π (9)  =  = 4.096076…. ≈ 4
+    </p>
+    <p>
+      π (10)=  = 4.34294… ≈ 4
+    </p>
+  </center>
+<center>
+  <table>
+    <th>
+      <p style="text-align: left; text-indent: 1px;"><b>The Prime Number Theorem</b></p>
+      <blockquote>“The ratio of the number of primes not exceeding x and  approaches 1 as x grows without bound.”</blockquote>
+    </th>
+  </table>
+  <p>&nbsp;&nbsp;We can use the theorem  above to estimate the odds that are a randomly chosen number is prime. The theorem tells us that the number of primes not exceeding x can be approximated by .
+</p>
+</center>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;The table below shows the possible number of primes from selected values of n. </p>
+<center><img src="PTM.png" width="700px"></center>
+<br>
+<hr>
+<blockquote>Mathematicians have dreamed of having a simple formula that generates only primes, a formula f(n) into which one could put any n ɛ N and always get a prime number. Such a formula would generate an infinite sequence of prime numbers and no composite numbers included. The prime numbers that can show patterns are the Fermat Numbers, Number in Euler Theorem, and the Mersenne Primes. 
+
+</blockquote>
+<ul>
+  <li>
+    <p><b>Fermat Numbers</b></p>
+    <blockquote>The sequence of the numbers produced by Fermat’s function F(n) =  are called Fermat numbers. Below are the first five Fermat numbers</blockquote>
+    <table align="center"width="500px">
+      <tr bgcolor="gray">
+    <th>n</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+  </tr>
+  <tr>
+    <td>F(n)</td>
+    <td>5</td>
+    <td>17</td>
+    <td>257</td>
+    <td>65,537</td>
+    <td>4,294,967,297</td>
+  </tr>
+  <tr>
+    </table>
+    <blockquote> However, no Fermat numbers beyond F(4) are known to be prime because Euler showed that F(5)  is composite. </blockquote>
+  </li>
+    <li><p><b>Euler Theorem</b></p>
+    <blockquote>With the proof of Euler on F(5) being a composite, he himself noticed that the function f(n) = n2 + n + 41 is particularly good in generating primes. Let us look at the first several values of f(n).</blockquote>
+    <table align="center"width="500px">
+      <tr bgcolor="gray">
+    <th>n</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>7</th>
+    <th>8</th>
+    <th>9</th>
+  </tr>
+  <tr>
+    <td>f(n) = n^2 + n + 41</td>
+    <td>43</td>
+    <td>47</td>
+    <td>53</td>
+    <td>61</td>
+    <td>71</td>
+    <td>83</td>
+    <td>97</td>
+    <td>113</td>
+    <td>131</td>
+  </tr>
+  <tr>
+    </table>
+    <blockquote> What is the limitation of this theorem? All of the first 39 values of the function are prime. However, the pattern breaks down eventually at f(40) for it is composite!</blockquote>
+  </li>
+  <li>
+    <p><b>
+      Mersenne Primes
+    </b></p>
+    <blockquote>Another sequence that is often used to generate very large primes, despite there being no guarantee that it will continue to produce primes, are the Mersenne numbers, which are number of the form</blockquote>
+    <center><blockquote><b>M(p) = 2p – 1, such that p = prime</b></blockquote></center>
+    <p><blockquote> As of December 21, 2018, The Great Internet Mersenne Prime Search (GIMPS) has discovered the largest known prime number, 282,589,933-1, having 24,862,048 digits. </p></blockquote>
+  </li>
+</ul>
+  </div> 
+   </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="padding-right:58px"><p class="w3-right"><i>Developed by: Guzman et al. (2022)</i></p></div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

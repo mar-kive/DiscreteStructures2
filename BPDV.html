@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Basic Properties of Divisibility</title>
+<link rel="icon" type="image/x-icon" href="calculating.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<style>
+
+.w3-main{margin-left:300px; background-color: white; }
+
+
+</style>
+
+
+</head>
+<body >
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: black;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px; background-color: gray;">Close Menu</a>
+  <div class="w3-container">
+    <br>
+    <img src="Math-clipart-png-8.png" width="200px" alt="image here">    
+    <h3 class="w3-padding-32 w3-text-white"><b>DISCRETE STRUCTURES 2<br>MODULE 1</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Front Page</a> 
+    <a href="BPD.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Basic Properties of Divisibility</a> 
+    <a href="PAC.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Primes and Composites</a> 
+    <a href="PP.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Patterns in the Primes</a> 
+    <a href="CDCMDT.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Commond Divisors, Common Multiple and Division Theorem</a>
+    <p class="w3-bar-item  w3-text-white">Video Tutorials</p>
+    <a href="BPDV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Basic Properties of Divisibility</blockquote></a>
+     <a href="PACV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Primes and Composite</blockquote></a>
+      <a href="PPV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Patterns in the Primes</blockquote></a>
+       <a href="CDCMDTV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Common Divisors, Common Multiples, and Division Theorem</blockquote></a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-large w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-gray w3-margin-right" onclick="w3_open()">☰</a>
+  <span>DISCRETE STRUCTURES 2</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-medium" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main"  >
+
+  <!-- Basic Properties of Divisibility -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge "><b>Basic Properties of Divisibility</b></h1>
+    <hr style="width:750px;border:5px solid black;" class="w3-round">
+      
+  </div>
+    <center><video src="divisibility.mp4" width="500px" controls></video>
+    <hr style="border:2px solid black" class="w3-round">
+    <video src="DIVISIBILITY - DISCRETE MATHEMATICS.mp4" width="500px" controls></video>
+    <hr style="border:2px solid black" class="w3-round">
+    <video src="Divisibility Rules 2-10.mp4" width="500px" controls></video>
+  </center></div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="padding-right:58px"><p class="w3-right"><i>Developed by: Guzman et al. (2022)</i></p></div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

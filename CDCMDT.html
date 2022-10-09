@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Common Divisors, Common Multiple, and Division Theorem</title>
+<link rel="icon" type="image/x-icon" href="calculating.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<style>
+
+.w3-main{margin-left:300px; background-color: white; }
+
+
+</style>
+
+
+</head>
+<body >
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: black;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px; background-color: gray;">Close Menu</a>
+  <div class="w3-container">
+    <br>
+    <img src="Math-clipart-png-8.png" width="200px" alt="image here">    
+    <h3 class="w3-padding-32 w3-text-white"><b>DISCRETE STRUCTURES 2<br>MODULE 1</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Main Page</a> 
+    <a href="BPD.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Basic Properties of Divisibility</a> 
+    <a href="PAC.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Primes and Composites</a> 
+    <a href="PP.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Patterns in the Primes</a> 
+    <a href="CDCMDT.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Commond Divisors, Common Multiple and Division Theorem</a>
+     <p class="w3-bar-item  w3-text-white">Video Tutorials</p>
+    <a href="BPDV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Basic Properties of Divisibility</blockquote></a>
+     <a href="PACV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Primes and Composite</blockquote></a>
+      <a href="PPV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Patterns in the Primes</blockquote></a>
+       <a href="CDCMDTV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Common Divisors, Common Multiples, and Division Theorem</blockquote></a>
+     </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-large w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-gray w3-margin-right" onclick="w3_open()">☰</a>
+  <span>DISCRETE STRUCTURES 2</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-medium" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main"  >  
+  <!-- Commond Divisors, Common Multiple and Division Theorem -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge "><b>Commond Divisors, Common Multiple and Division Theorem</b></h1>
+    <hr style="width:1100px;border:5px solid black;" class="w3-round">
+    <p><b>Discussion</b></p>
+    <table style="width:100%">
+    <td>
+      <p style="text-align:left"><b>Common Divisors and Common Multiples</b></p>
+      <p><blockquote>Let a and b be integers that are not both equal to 0. The <b>greatest common divisor</b> (gcd) of a and b is the largest d ∈ N for which d | a and b d | b. In symbols, we have <b>d = gcd (a, b).</b></blockquote></p>
+      <p><b>Example:</b></p>
+      <p>Find the greatest common divisor of 18 and 30</p>
+      <p><blockquote><b>Sol'n</b><br>The divisors of 18: 1, 2, 3, 6, 9, and 18<br>The divisors of 30: 1, 2, 3, 5, 6, 10, 15, 30<br>The gcd (18, 30) = 6</blockquote></p>
+    </td>
+    </table><br>
+
+    <table style="width:100%">
+      <td>
+        <p style="text-align:left"><b>Relatively Prime</b></p>
+        <p><blockquote>Let a, b ∈ Z. We say a and b are relatively prime if gcd (a, b) = 1.<br><br>Let <i>p</i> be prime, and <i>n</i> be an integer. If <i>p</i> doest not divide <i>n,</i> then gcd (<i>p, n)<i> = 1.</i></p></b></blockquote></p>
+        <p><b>Examples:</b></p>
+        <p><blockquote>77 and 250<br><br>21 and 22<br><br>12 and 13</blockquote></p>
+      </td>
+      </table><br>
+
+      <table style="width:100%">
+        <td>
+          <p style="text-align:left"><b>Common Multiple</b></p>
+          <p><blockquote>If two integers each divide a number m, then m is called a <b>common multiple</b> of these integers.<br><br>Let a and b be nonzero integers. The <b>least common multiple</b> (LCM) of a and b is the smallest m ∈ N for which a | m and b | m. In symbols,</blockquote></p>
+          <p style="text-align:center;">m = lcm (a, b).</p>
+          <p><b>Examples:</b></p>
+          <p>Find the least common multiple of each pairs of integers.</p>
+          <ul>
+            <li>lcm (1960, 1100)<br>1960 = 2^3 * 5^1 * 7^2<br>1100 = 2^2 * 5^2 * 11^1<br>
+            &nbsp;&nbsp; &nbsp; &nbsp; 2^3 * 5^2 * 7^2 * 11 = <b>107,800</b>
+            </li><br>
+            <li>lcm (27,85)<br>27 = 3^3<br>85 = 5 * 17<br>
+              &nbsp;&nbsp; &nbsp; &nbsp; 3^3 * 5 * 17 = <b>2295</b>
+              </li>  
+          </ul>
+        </td>
+        </table><br>
+
+        <table style="width:100%">
+          <td>
+            <p style="text-align:left"><b>The Division Theorem</b></p>
+            <p><blockquote>Let a ∈ Z and d ∈ N. Then there exist unique integers q and r such that <b>a = dq + r</b> and 0 ≤ r &#60; d.</b></blockquote></p>
+            <p><b>Examples:</b></p>
+            <ul>
+              <li>Divide 329 by 67<br>329 = 4 * 67 + 61</li><br>
+              <li>Divide -120 by 50<br>-120 = -3 * 50 + 30</li>  
+            </ul>
+          </td>
+          </table><br>
+
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="padding-right:58px"><p class="w3-right"><i>Developed by: Guzman et al. (2022)</i></p></div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

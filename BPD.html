@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Basic Properties of Divisibility</title>
+<link rel="icon" type="image/x-icon" href="calculating.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<style>
+
+.w3-main{margin-left:300px; background-color: white; }
+
+
+</style>
+
+
+</head>
+<body >
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color: black;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px; background-color: gray;">Close Menu</a>
+  <div class="w3-container">
+    <br>
+    <img src="Math-clipart-png-8.png" width="200px" alt="image here">
+        <h3 class="w3-padding-32 w3-text-white"><b>DISCRETE STRUCTURES 2<br>MODULE 1</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Front Page</a> 
+    <a href="BPD.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Basic Properties of Divisibility</a> 
+    <a href="PAC.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Primes and Composites</a> 
+    <a href="PP.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Patterns in the Primes</a> 
+    <a href="CDCMDT.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Commond Divisors, Common Multiple and Division Theorem</a>
+    <p class="w3-bar-item  w3-text-white">Video Tutorials</p>
+    <a href="BPDV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Basic Properties of Divisibility</blockquote></a>
+     <a href="PACV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Primes and Composite</blockquote></a>
+      <a href="PPV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Patterns in the Primes</blockquote></a>
+       <a href="CDCMDTV.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white"><blockquote>Common Divisors, Common Multiples, and Division Theorem</blockquote></a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-large w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-gray w3-margin-right" onclick="w3_open()">☰</a>
+  <span>DISCRETE STRUCTURES 2</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-medium" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main"  >
+
+  <!-- Basic Properties of Divisibility -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge "><b>Basic Properties of Divisibility</b></h1>
+    <hr style="width:800px;border:5px solid black;" class="w3-round">
+      <p><b>Discussion of Concepts </p></b>
+    <p>Deinition: </p>
+    <blockquote>"Let a and b be integers with a ≠ 0. Suppose ac = b for some integer c. We then say that a divides b or b is divisible by a, written as “a l b”. Also, we can say that b is a multiple of a or that a is a factor or divisor of b. If a does not divide b, then we may express it as “a ł b “ ".</blockquote>
+    <br>
+    <p><b>Basic Properties of Divisibility</b></p>
+    <ol>
+      <li> If a ׀ b and b ׀ c, then a ׀ c.  </li>
+      <li> If a ׀ b, then for any integer x, a ׀ bx.  </li>
+      <li> If a ׀ b and a l c, then a ׀ (b + c) and a ׀ (b – c)  </li>
+      <li> If a ׀ b and b ≠ 0, then a = b or  /a / = / b  </li>
+      <li> If a ׀ b and  b ׀ a, then ׀ a  = / b / ; i.e. a = ±b </li>
+      <li> If a ׀ 1 , then a = ±1 </li>
+    </ol>
+  <br>
+   <p><b>Divisibility Rules</b></p>
+   <p>Below are examples of integers which divisible by another integer. Study examples and understand the rules so that divisibility becomes easier. </p>
+   <table style="width:100%">
+  <tr>
+    <th>Number is Divisible by</th>
+    <th>Condition</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td> 2 </td>
+    <td>If the units digit is even</td>
+    <td>31<u>6</u></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>If the sum of the digits is divisible by 3</td>
+    <td>501; 5+0+1 = 6</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>If the last two digits form a number divisible by 4</td>
+    <td>7<u>12</u></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>If the units digit is either 0 or 5.</td>
+    <td>125<u>0</u></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>If the number is divisible both by 2 and 3.</td>
+    <td>852; units digit is 2
+8+5+2 = 15
+</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Cross of the last digit, double it and subtract it from the rest of the number. If the difference is divisible by 7, then the original number is divisible by 7. (You may repeat the process when you are not sure of the new number’s divisibility.</td>
+    <td>9324
+i). 932
+ii) 4*2 = 8
+iii) 932 – 8 = 924 (new number)
+iv). 92-8 = 84 (divisible by 7)
+Thus, 9324 is divisible by 7 or 7 ׀ 9324
+</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>If the last three (3) digits is divisible by 8</td>
+    <td>3096</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>If the sum of the digits is divisible by 9.</td>
+    <td>123453</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>If the units digit is zero.</td>
+    <td>209<u>0</u></td>
+  </tr> 
+  <tr>
+    <td>11</td>
+    <td>If the (sum of the odd numbered digits) minus (the sum of the even numbered digits) is divisible by 11 </td>
+    <td>3<u>4</u>8<u>7</u>1<u>9</u>0<u>3</u>
+i). 3+9+7+4 = 23
+ii). 0+1+8+3= 12
+iii) 23 – 12=11
+</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>If the number is divisible by both 3 and 4</td>
+    <td>396</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Delete the units digit from the number, then subtract 9 times the deleted digit from the remaining number. If the difference is divisible by 13, then so is the original number. </td>
+    <td>169</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>If the last four digits from a number is divisible by 16.</td>
+    <td>542391600</td>
+  </tr>
+</table>
+<br>
+  <table> <td>
+  <p><b>Note:</b></p><blockquote>&#34A number is called <b> perfect </b> if it is equal to the sum of all its positive divisors, excluding the number itself.&#34 
+<br>
+Example:  <br>
+            &nbsp;Number 6: its factors are 1, 2, 3 and 1 + 2 + 3 = 6
+</blockquote></table></td>
+<br><br><br><br><br><br>
+  </div>
+  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="padding-right:58px"><p class="w3-right"><i>Developed by: Guzman et al. (2022)</i></p></div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
